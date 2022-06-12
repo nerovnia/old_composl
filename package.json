@@ -1,0 +1,29 @@
+{
+  "name": "composl",
+  "version": "0.0.1",
+  "description": "Обрахунок комунальних послуг домогосподарства",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nerovnia/composl.git"
+  },
+  "keywords": [
+    "communal",
+    "service",
+    "public",
+    "calculation",
+    "computation",
+    "graph",
+    "diagram",
+    "chart"
+  ],
+  "author": "Volodymyr Nerovnia <nerv@i.ua>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nerovnia/composl/issues"
+  },
+  "homepage": "https://github.com/nerovnia/composl#readme"
+}
