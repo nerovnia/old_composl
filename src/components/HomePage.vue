@@ -1,7 +1,7 @@
 <template>
-  <div id="homePage" class="hello">
+  <div id="homePage">
     <h1>{{ msg }}</h1>
-    <h2>Введення, коригуання показів та проплат</h2>
+    <h2>Введення, коригування показів та проплат</h2>
     <form action="">
       <div id="year">
         <label for="">Рік</label>
@@ -42,14 +42,16 @@
       </nav>
     </div>
     <div id="listOrders">
-      
+
     </div>
   </div>
 </template>
 
 <script>
+import Orders from './components/Orders.vue'
+
 export default {
-  name: 'HelloWorld',
+  name: 'HomePage',
   props: {
     msg: String
   }
