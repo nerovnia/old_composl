@@ -45,16 +45,28 @@
 
     </div>
   </div>
+  <ComunalOrders year=""/>
 </template>
 
 <script>
-import Orders from './components/Orders.vue'
+import ComunalOrders from './components/ComunalOrders.vue'
 
 export default {
   name: 'HomePage',
+  components: {
+    ComunalOrders
+  },
   props: {
     msg: String
-  }
+  },
+  data() {
+    return {
+      //course: [],
+    }
+  },
+  mounted() {
+  }  
+
 }
 </script>
 

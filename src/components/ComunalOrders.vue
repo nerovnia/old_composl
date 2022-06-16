@@ -24,8 +24,8 @@
         <h2>Послуги:</h2>
       </div>
       <div id="list-orders">
-        <div class="title">        
-          <h3>Рік</h3>
+        <div class="title">
+          <h3>{{ year }}Рік</h3>
         </div>
         <table>
           <caption>Місяць</caption>
@@ -59,15 +59,16 @@
 
 <script>
   export default {
-  name: 'Orders',
+  name: 'ComunalOrders',
   props: {
-    year: "",
-    services: [],
-    companies: [],
-    orders: []
+    year: String
+    //services: [],
+    //companies: [],
+    //orders: []
   }
 }
 
 </script>
 
-<style></style>
+<style>
+</style>
