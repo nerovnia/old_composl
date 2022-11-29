@@ -61,11 +61,21 @@
   export default {
   name: 'ComunalOrders',
   props: {
-    year: String
-    //services: [],
-    //companies: [],
-    //orders: []
-  }
+    year: {
+      type: String
+    },
+    services: [],
+    companies: [],
+    orders: []
+  },
+/*    
+  data() {
+    return {
+      //year: "dsfs"
+      //course: [],
+    }
+  },
+*/
 }
 
 </script>

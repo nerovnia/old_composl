@@ -6,9 +6,10 @@
       <div id="year">
         <label for="">Рік</label>
         <select name="" id="">
-          <option value="">2020</option>
-          <option value="">2021</option>
-          <option value="">2022</option>
+          <option value=""
+            v-for="year in years"
+            :years="years"
+            :key="year.id"> {{ year }} </option>
         </select>
       </div>
       <input type="button" value="Далі >">
@@ -45,22 +46,47 @@
 
     </div>
   </div>
-  <ComunalOrders year=""/>
+  <!--
+  <ComunalOrders :year="year"/>
+  -->
+  <CatalogButtons :catalogNames="catalogNames"/>
 </template>
 
 <script>
-import ComunalOrders from './components/ComunalOrders.vue'
+//import ComunalOrders from '@/components/ComunalOrders.vue'
+import CatalogButtons from '@/components/CatalogButtons.vue'
 
 export default {
   name: 'HomePage',
   components: {
-    ComunalOrders
+    //ComunalOrders,
+    CatalogButtons
   },
   props: {
     msg: String
   },
   data() {
     return {
+      years: [ "2020", "2021", "2022" ],
+      catalogNames: [
+        {
+          enName: "companies",
+          name: "Компанії"
+        },
+        {
+          enName: "servcoms",
+          name: "Послуги"
+        },
+        {
+          enName: "services",
+          name: "Платіжні системи"
+        },
+        {
+          enName: "orders",
+          name: "Рахунки"
+        }
+      ],
+      year: ""
       //course: [],
     }
   },
