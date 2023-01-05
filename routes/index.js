@@ -52,6 +52,7 @@ const getAccountings = async (db, searchString) => {
 
 /* GET home page. */
 router.get('/', function (req, res) {
+  console.log('++++++++++++++++++++++++++')
   res.render('index', { title: 'Express' });
 });
 
